@@ -14,13 +14,15 @@
   "devDependencies": {
     "@types/jest": "*",
     "@types/node": "*",
+    "prettier": "^1.15.3",
     "typescript": "latest"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "fmt": "prettier src/**/*tsx src/**/*ts --write"
   },
   "eslintConfig": {
     "extends": "react-app"
