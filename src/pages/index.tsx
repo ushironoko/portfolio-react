@@ -29,7 +29,7 @@ const styles = (theme: Theme) =>
     section: {
       margin: '0 auto',
       padding: '10px'
-    },
+    }
   })
 
 class Index extends React.Component<WithStyles<typeof styles>> {

@@ -15,7 +15,7 @@ const styles = (theme: Theme) =>
       position: 'sticky',
       background: '#0c0c0c',
       color: '#FFF',
-      zIndex: -1,
+      zIndex: -1
     }
   })
 
@@ -26,9 +26,7 @@ function TheHeader(props: WithStyles<typeof styles>) {
       <div>
         <AppBar className={classes.appbar}>
           <Toolbar>
-            <Typography color="inherit">
-              Ushironoko Portfolio
-            </Typography>
+            <Typography color="inherit">Ushironoko Portfolio</Typography>
           </Toolbar>
         </AppBar>
       </div>

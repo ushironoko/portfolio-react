@@ -21,6 +21,9 @@ const styles = (theme: Theme) =>
     underline: {
       borderBottom: '1px solid #ebeef5',
       boxSizing: 'border-box'
+    },
+    textAdjust: {
+      paddingTop: '15px'
     }
   })
 
@@ -36,14 +39,11 @@ const Contents = withStyles(styles)((props: WithStyles<ClassNames>) => {
         <div>
           <p>
             名前 うしろのこ
-            <wbr />
+            <br />
+            年齢 24歳
           </p>
-          <p>年齢 24歳</p>
           <p>
-            フロント/サーバともに好きです。
-            <wbr />
-            アイマスとラジオとゲームが好きです。
-            <wbr />
+            アイマスとラジオとゲームとプログラミングが好きです。
             アイマスに貢献することが最近の趣味です。
           </p>
         </div>
@@ -55,9 +55,10 @@ const Contents = withStyles(styles)((props: WithStyles<ClassNames>) => {
           <br />
           <Chips />
 
-          <Typography noWrap>
+          <Typography className={props.classes.textAdjust}>
             {`
               フロント、サーバー共に好きです。
+              クラウドではAWS、GCP、Fierbaseにお世話になっています。
             `}
           </Typography>
         </div>
