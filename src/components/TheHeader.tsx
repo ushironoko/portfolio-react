@@ -12,8 +12,10 @@ const styles = (theme: Theme) =>
   createStyles({
     appbar: {
       top: 0,
+      position: 'sticky',
       background: '#0c0c0c',
-      color: '#FFF'
+      color: '#FFF',
+      zIndex: -1,
     }
   })
 
@@ -21,13 +23,15 @@ function TheHeader(props: WithStyles<typeof styles>) {
   const { classes } = props
   return (
     <>
-      <AppBar position="sticky" className={classes.appbar}>
-        <Toolbar>
-          <Typography color="inherit" noWrap>
-            Ushironoko Portfolio
-          </Typography>
-        </Toolbar>
-      </AppBar>
+      <div>
+        <AppBar className={classes.appbar}>
+          <Toolbar>
+            <Typography color="inherit">
+              Ushironoko Portfolio
+            </Typography>
+          </Toolbar>
+        </AppBar>
+      </div>
     </>
   )
 }

@@ -10,9 +10,13 @@ import withRoot from '../withRoot'
 const styles = (theme: Theme) =>
   createStyles({
     avatar: {
-      margin: 20,
+      margin: 5,
       width: 100,
-      height: 100
+      height: 100,
+      position: 'absolute',
+      borderRadius: '50%',
+      border: '4px solid #fff',
+      zIndex: 1
     }
   })
 

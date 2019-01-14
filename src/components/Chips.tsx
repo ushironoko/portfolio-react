@@ -98,6 +98,14 @@ const Chips = withStyles(styles)((props: WithStyles<ClassNames>) => {
         color="secondary"
         variant="outlined"
       />
+
+      <Chip
+        avatar={<Avatar>Go</Avatar>}
+        label="Golang"
+        className={props.classes.chip}
+        color="primary"
+        variant="outlined"
+      />
     </>
   )
 })
