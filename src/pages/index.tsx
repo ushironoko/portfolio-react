@@ -1,4 +1,6 @@
 import * as React from 'react'
+import AppBar from '@material-ui/core/AppBar'
+import Toolbar from '@material-ui/core/Toolbar'
 import Button from '@material-ui/core/Button'
 import Card from '@material-ui/core/Card'
 import Typography from '@material-ui/core/Typography'
@@ -7,31 +9,40 @@ import createStyles from '@material-ui/core/styles/createStyles'
 import withStyles, { WithStyles } from '@material-ui/core/styles/withStyles'
 import withRoot from '../withRoot'
 
+import DiscriptionCard from '../components/discriptionCard'
+
 const styles = (theme: Theme) =>
   createStyles({
     root: {
       boxSizing: 'border-box',
-      textAlign: 'center',
-      paddingTop: theme.spacing.unit * 20,
+      width: '100%',
+      minHeight: 'calc(100vh - 61px)',
+      background: '#E6ECF0',
+    },
+    container: {
       width: '70%',
       margin: '0 auto',
+      background: '#fafafa',
+      paddingTop: '30px',
+      minHeight: 'calc(100vh - 61px)',
       display: 'flex',
-      justifyContent: 'center'
+      justifyContent: 'center',
+      alignItems: 'flex-start'
     },
     card: {
       flex: 1,
-      width: '100%',
-      minWidth: '100px'
+      margin: '0 auto',
+      padding: '10px',
+      manWidth: 275
+    },
+    appbar: {
+      top: 10,
+      background: '#FFF',
+      color: '#00b1bb'
     }
   })
 
 class Index extends React.Component<WithStyles<typeof styles>> {
-  handleClose = () => {
-    this.setState({
-      open: false
-    })
-  }
-
   handleClick = () => {
     this.setState({
       open: true
@@ -40,23 +51,31 @@ class Index extends React.Component<WithStyles<typeof styles>> {
 
   render() {
     return (
-      <div className={this.props.classes.root}>
-        <Card className={this.props.classes.card}>
-          <Typography variant="h4">USHIRONOKO Portfolio</Typography>
-        </Card>
-        <Card className={this.props.classes.card}>
-          <Typography variant="subtitle1" gutterBottom>
-            example project
-          </Typography>
-        </Card>
-        <Button
-          variant="contained"
-          color="secondary"
-          onClick={this.handleClick}
-        >
-          Subscribe
-        </Button>
-      </div>
+      <>
+        <section className={this.props.classes.root}>
+          <AppBar position="sticky">
+            <Toolbar>
+              <Typography color="inherit" noWrap>
+                Ushironoko Portfolio
+              </Typography>
+            </Toolbar>
+          </AppBar>
+
+          <div className={this.props.classes.container}>
+            <div className={this.props.classes.card}>
+              <DiscriptionCard />
+            </div>
+
+            <div className={this.props.classes.card}>
+              <Card>
+                <Typography variant="subtitle1" gutterBottom>
+                  お前はここ
+                </Typography>
+              </Card>
+            </div>
+          </div>
+        </section>
+      </>
     )
   }
 }
