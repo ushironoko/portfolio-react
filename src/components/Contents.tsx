@@ -58,7 +58,7 @@ const Contents = withStyles(styles)((props: WithStyles<ClassNames>) => {
           <Typography className={props.classes.textAdjust}>
             {`
               フロント、サーバー共に好きです。
-              クラウドではAWS、GCP、Fierbaseにお世話になっています。
+              クラウドではAWS、GCP、Firebaseにお世話になっています。
             `}
           </Typography>
         </div>
