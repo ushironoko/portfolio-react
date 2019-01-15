@@ -33,8 +33,6 @@ const styles = (theme: Theme) =>
   })
 
 class Index extends React.Component<WithStyles<typeof styles>> {
-  handleChange = () => {}
-
   state = {
     myAvatarChecked: false,
     contentsChecked: false

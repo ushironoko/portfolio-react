@@ -1,8 +1,7 @@
 import * as React from 'react'
+import IconButton from '@material-ui/core/IconButton'
 
 import { Theme } from '@material-ui/core/styles/createMuiTheme'
-import IconButton from '@material-ui/core/IconButton'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import createStyles from '@material-ui/core/styles/createStyles'
 import withStyles, { WithStyles } from '@material-ui/core/styles/withStyles'
 import withRoot from '../withRoot'
@@ -15,7 +14,7 @@ const styles = (theme: Theme) =>
       margin: theme.spacing.unit,
       display: 'flex',
       justifyContent: 'center',
-      alignItems: 'frex-start'
+      alignItems: 'flex-start'
     }
   })
 
