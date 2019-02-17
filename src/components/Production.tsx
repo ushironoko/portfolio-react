@@ -38,6 +38,8 @@ const Production = withStyles(styles)((props: WithStyles<ClassNames>) => {
         `}
       </Typography>
 
+      <br />
+
       <a href="https://github.com/ushironoko/millionlive-mmliverepo-ocr-template" target="_blank" rel="noopener">
       https://github.com/ushironoko/millionlive-mmliverepo-ocr-template</a>
 
