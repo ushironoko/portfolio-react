@@ -18,7 +18,7 @@ type ClassNames = typeof styles
 const Production = withStyles(styles)((props: WithStyles<ClassNames>) => {
   return (
     <>
-      <a href="https://github.com/ushironoko/a-Go" target="_blank">
+      <a href="https://github.com/ushironoko/a-Go" target="_blank" rel="noopener">
         https://github.com/ushironoko/a-Go</a>
 
       <Typography noWrap>
@@ -27,9 +27,18 @@ const Production = withStyles(styles)((props: WithStyles<ClassNames>) => {
         `}
       </Typography>
 
-      <br/>
+      <br />
 
-      <a href="https://github.com/ushironoko/millionlive-mmliverepo-ocr-template" target="_blank">
+      <a href="https://million-livesimulation-analyzer.netlify.com/" target="_blank" rel="noopener">
+      https://million-livesimulation-analyzer.netlify.com/</a>
+
+      <Typography noWrap>
+        {`
+          Nuxt製のミリシタスコア計算機
+        `}
+      </Typography>
+
+      <a href="https://github.com/ushironoko/millionlive-mmliverepo-ocr-template" target="_blank" rel="noopener">
       https://github.com/ushironoko/millionlive-mmliverepo-ocr-template</a>
 
       <Typography noWrap>
@@ -40,7 +49,7 @@ const Production = withStyles(styles)((props: WithStyles<ClassNames>) => {
 
       <br/>
 
-      <a href="https://github.com/ushironoko/millionlive-lounge-egosearch-server" target="_blank">
+      <a href="https://github.com/ushironoko/millionlive-lounge-egosearch-server" target="_blank" rel="noopener">
       https://github.com/ushironoko/millionlive-lounge-egosearch-server</a>
 
       <Typography noWrap>
@@ -51,23 +60,12 @@ const Production = withStyles(styles)((props: WithStyles<ClassNames>) => {
 
       <br/>
 
-      <a href="https://ushironoko-dev-blog.me/" target="_blank">
+      <a href="https://ushironoko-dev-blog.me/" target="_blank" rel="noopener">
       https://ushironoko-dev-blog.me/</a>
 
       <Typography noWrap>
         {`
           Nuxt.js + Contentful + Netlify で作ったJAMstackなブログ
-        `}
-      </Typography>
-
-      <br />
-
-      <a href="https://ushironoko-portfolio.me/" target="_blank">
-      https://ushironoko-portfolio.me/</a>
-
-      <Typography noWrap>
-        {`
-          Nuxt.jsの方のポートフォリオ
         `}
       </Typography>
     </>
