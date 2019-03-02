@@ -29,8 +29,8 @@ const Production = withStyles(styles)((props: WithStyles<ClassNames>) => {
 
       <br />
 
-      <a href="https://million-livesimulation-analyzer.netlify.com/" target="_blank" rel="noopener">
-      https://million-livesimulation-analyzer.netlify.com/</a>
+      <a href="https://millionlive-simple-score-calc.me/" target="_blank" rel="noopener">
+      https://millionlive-simple-score-calc.me/</a>
 
       <Typography noWrap>
         {`

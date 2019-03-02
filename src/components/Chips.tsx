@@ -93,7 +93,7 @@ const Chips = withStyles(styles)((props: WithStyles<ClassNames>) => {
 
       <Chip
         avatar={<Avatar>C#</Avatar>}
-        label="WPF"
+        label=".NET"
         className={props.classes.chip}
         color="secondary"
         variant="outlined"
@@ -101,7 +101,7 @@ const Chips = withStyles(styles)((props: WithStyles<ClassNames>) => {
 
       <Chip
         avatar={<Avatar>Go</Avatar>}
-        label="Golang"
+        label="Go"
         className={props.classes.chip}
         color="primary"
         variant="outlined"
